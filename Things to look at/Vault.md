@@ -1,0 +1,1 @@
+Directory: C:\obsidian\kev
