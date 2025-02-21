@@ -11,6 +11,12 @@ git remote add origin git@github.com:KevinArellano94/obsidian.git
 git push -u origin master
 ```
 
+### Oneliner
+
+```bash
+git commit -m "..."; git branch -M master; git remote add origin git@github.com:KevinArellano94/obsidian.git; git push -u origin master
+```
+
 ## Remove files / directories
 
 ```bash
