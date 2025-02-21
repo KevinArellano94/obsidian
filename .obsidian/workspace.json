@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Git.md",
+                "file": "_applications/beyondidentity - Senior Software Systems Architect.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "beyondidentity - Senior Software Systems Architect"
             }
           }
         ]
@@ -162,17 +162,21 @@
   },
   "active": "78d68e57842cb655",
   "lastOpenFiles": [
-    "Things to look at/Vault.md",
-    "Ideas/Modern portfolio site.md",
     "Templates/Git.md",
-    "Things to look at/docs.celeryq.dev.md",
-    "Templates",
-    "Things to look at/kafka.apache.org.md",
+    "Projects/Portfolio.md",
+    "Vault.md",
     "Things to look at/temporal.md",
     "Things to look at/lucide.dev.md",
-    "Projects/Portfolio.md",
-    "Things to look at",
+    "Things to look at/kafka.apache.org.md",
+    "Things to look at/docs.celeryq.dev.md",
+    "_applications/beyondidentity - Senior Software Systems Architect.md",
+    "Ideas/Modern portfolio site.md",
+    "Projects/Auth2.0.md",
+    "Things to look at/beyondidentity.com.md",
+    "_applications",
     "Notes/Notes.md",
+    "Templates",
+    "Things to look at",
     "Ideas",
     "Projects",
     "_other/the-illustrated-guide-to-a-phd1.png",
@@ -195,9 +199,6 @@
     "_other/Promises.md",
     "_other/Quotes.md",
     "Quantum Glass.md",
-    "_other/Obsolete/Software Engineer III, Elasticsearch.md",
-    "Ruby.md",
-    "_other/Obsolete/Software Reliable Engineer - Architect Lifestyle.md",
     "_other/KevArel",
     "_other/Obsolete"
   ]

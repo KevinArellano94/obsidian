@@ -1,4 +1,5 @@
-#celeryq #distributed-system 
+#celeryq #distributed-system #02-20-2025 
+
 https://docs.celeryq.dev/en/stable/
 
 # Celery - Distributed Task Queue[](https://docs.celeryq.dev/en/stable/#celery-distributed-task-queue "Link to this heading")

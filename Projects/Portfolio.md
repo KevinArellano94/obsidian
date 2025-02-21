@@ -1,4 +1,4 @@
-#about-me
+#about-me #02-20-2025 
 
 Kevin Arellano | Senior Back-End Engineer | Distributed Systems Enthusiast
 
