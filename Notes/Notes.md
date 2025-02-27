@@ -1,2 +1,5 @@
 #notes 
-Notes
+
+```bash
+https://www.humblefunding.co/?via=kevin-youtube2
+```
