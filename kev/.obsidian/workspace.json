@@ -99,8 +99,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -202,7 +201,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5a454c747d10d4fe",
+  "active": "41e5744455835eea",
   "lastOpenFiles": [
     "Data Structures/Hash Table.md",
     "Data Structures/Arrays.md",

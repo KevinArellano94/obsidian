@@ -48,10 +48,103 @@ A good hashing function can make a big difference in how efficiently we can look
 
 With "**separate chaining**", the parking spot just grows a little garage (a linked list) and parks the cars (hash table "keys") one behind the other.
 
-"**Open addressing**", on the other hand, is like the valet looking for the next available spot. If we are parking the cars right next to one another then that's "linear probing". If the valet starts hopping around in a specific pattern then it is quadratic probing or double hashing in the CS world.
+"**Open addressing**", on the other hand, is like the valet looking for the next available spot. If we are parking the cars **right next to one another then that's "linear probing"**. If the valet starts hopping around in a specific pattern then it is **quadratic probing** or **double hashing** in the CS world.
 
 Imagine our valet is having a bad day and just trying to park all the cars as close together in the same spot as possible, causing a traffic jam, or putting all the cars so far away it takes forever to get to them. This will result in a lot of collisions and will make a mess! That's like a poor hash function in coding. A good hash function, like a top-notch valet, parks the cars in a way that they're spread out evenly (avoiding traffic jams or "collisions") and are easy to retrieve when needed.
 
-Now imagine that our parking lot is getting filled up. This is when "rehashing" comes in. It's like the valet suddenly puts in an order for a bigger parking lot, moves all the cars around to space them out more, reducing the chances of assigning two cars to the same spot.
+Now imagine that our parking lot is getting filled up. This is when "**rehashing**" comes in. It's like the valet suddenly puts in an order for a bigger parking lot, moves all the cars around to space them out more, reducing the chances of assigning two cars to the same spot.
 
 Even though finding a parking spot (or an array index!) might sometimes take longer than expected, over many trips to the lot (or "amortized over time"), our valet (hash function) usually gets us there pretty quickly, averaging out to constant time. Here's a little python code as an example. The code supports a fixed size table of 10 elements and does not rehash when the table gets full and just continues to use separate chaining to avoid collisions (eventually degrading performance).
+
+```typescript
+export class HashTable {
+    size: number;
+    table: [][];
+    constructor() {
+        this.size = 10;
+        this.table = new Array(this.size).fill(null).map(() => []);
+    }
+
+    hashFunction(key: number) {
+        return key % this.size;
+    }
+  
+    insert(key: number, value: any) {
+        const hashIndex = this.hashFunction(key);
+        let keyExists: boolean = false;
+        let bucket: any[] = this.table[hashIndex];
+  
+        for (let i = 0; i < bucket.length; i++) {
+            if (bucket[i][0] === key) {
+                keyExists = true;
+                bucket[i] = [key, value];
+                break;
+            }
+        }
+  
+        if (!keyExists) bucket.push([key, value]);
+    }
+}
+  
+if (import.meta.main) {
+    const hashtable = new HashTable();
+    hashtable.insert(0, `test-value`);
+}
+```
+
+## When to Use a Hash Table in an Interview?
+
+When it comes to technical interviews, problems often revolve around **manipulating** and **processing data**. One of the **most common ways to speed up an algorithm is to trade time for space**. Phrased differently, we can **increase the speed of many algorithms** if we are **willing to store some extra data in memory** to **avoid an expensive lookup operation later**. This is the primary use for hash tables.
+
+Hash tables tend to be used in conjunction with other techniques to solve a problem, rather than being a solution in themselves. Figuring out what to save as the key and value and then how to use that information once saved is more difficult than understanding the concept itself. Here are some well-known scenarios where these structures tend to be most useful:
+
+### Frequency Counts
+
+It's a fairly common requirement in interview problems to **count the frequency of something**. We use the key to hold the unique element we are tracking (whether it is a letter, string, or even an entire object) and the value is used to hold the number of times we've seen it. This usually allows us to eliminate the need for a nested loop, thereby saving us time. Here are a few example problems showcasing this.
+
+- [Top K Frequent Elements](https://interviewing.io/questions/top-k-frequent-elements): A hash table can be used to count the **frequency of each element**, then a **heap** or another **sorting algorithm can be used to select the top k**.
+- [Ransom Note](https://leetcode.com/problems/ransom-note/): A hash table can be used to count the **frequency of each character in the magazine**.
+- [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/): A hash table can be used to **count the frequency of each character in p**, and then a **sliding window can be used to track the frequency of characters in s**.
+- [First Unique Character In a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/): A hash map can be used to count the **frequency of each character**, though a **set may be a slightly better data structure** here to save a small amount of space.
+
+Pro Tip: In Python, there are two common tools you can utilize in `collections` to save yourself time in an interview.
+
+A `Counter` can count the frequency of elements occurring in a list (note the capitalization!)
+
+```typescript
+/*
+There is no direct equivalent for the python Counter in JavaScript.
+The closest approximation is to use JavaScript's array methods or
+objects to count occurrences of words. See below for an example of that.
+*/
+if (import.meta.main) {
+    const words: string = "i love love love interviewing.io";
+    const wordsArray = words.split(" ");
+  
+    const counter = wordsArray.reduce((acc: any, word: any) => {
+        acc[word] = (acc[word] || 0) + 1;
+        return acc;
+    }, {});
+  
+    console.log(counter); // { i: 1, love: 3, 'interviewing.io': 1 }
+}
+```
+
+More generally, a `defaultdict` can initialize default values for you when adding a new key to your hash table (aka dictionary).
+
+```typescript
+/*
+There is no direct equivalent to Python's collections.defaultdict.
+However, we can achieve similar functionality by using the logical
+OR (||) operator to provide a default value when a key doesn't exist
+in the dictionary.
+*/
+const words: string = "i love love love interviewing.io";
+const dictionary = {};
+for (const word of words.split(" ")) {
+    dictionary[word]: any = (dictionary[word] || 0) + 1;
+}
+
+console.log(dictionary); // { i: 1, love: 3, 'interviewing.io': 1 }
+```
+
