@@ -1,0 +1,287 @@
+{
+  "main": {
+    "id": "e10c8a6cc8886b2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "f32c315b4d1c5796",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "64702c18bad918b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Structures/Arrays.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Arrays"
+            }
+          }
+        ]
+      },
+      {
+        "id": "78f4bb30cadf6f93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d1de2f257e590bb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Structures/Arrays.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Arrays"
+            }
+          },
+          {
+            "id": "eeded047afe51599",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/maximum sum of any size k subarray - sliding window.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "maximum sum of any size k subarray - sliding window"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c6b28316207f4e71",
+    "type": "split",
+    "children": [
+      {
+        "id": "023f17cc3b11c9d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41e5744455835eea",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b22bed740464b6d4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2579b0c846e0b555",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "082a7328ab2b7ce0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5a454c747d10d4fe",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 493
+  },
+  "right": {
+    "id": "d6d6db4d8e445781",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c43962070ddb11d",
+        "type": "tabs",
+        "dimension": 64.14728682170544,
+        "children": [
+          {
+            "id": "bf47c15d2ed27f74",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Data Structures/Arrays.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Arrays"
+            }
+          },
+          {
+            "id": "b15957c14bb46c84",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Data Structures/Arrays.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Arrays"
+            }
+          },
+          {
+            "id": "b2dea32e8cb07a6f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Data Structures/Arrays.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Arrays"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "0b5dcd837425f727",
+        "type": "tabs",
+        "dimension": 35.85271317829458,
+        "children": [
+          {
+            "id": "f3e5b279e42c0829",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "omnisearch:Omnisearch": false,
+      "quick-snippets-and-navigation:Quick snippets and navigation: Search tags": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "41e5744455835eea",
+  "lastOpenFiles": [
+    "Data Structures/Strings.md",
+    "Other/Intricacy.md",
+    "Data Structures/Arrays.md",
+    "Data Structures/Dynamic Programming.md",
+    "Other/Heuristic.md",
+    "Other/Idempotent.md",
+    "Algorithms/reverse array - two pointers.md",
+    "Algorithms/maximum sum of any size k subarray - sliding window.md",
+    "Algorithms/binary search.md",
+    "Data Structures/Linked Stack.md",
+    "Data Structures/Linked List.md",
+    "Algorithms/breadth-first search (BFS)  - Traversal Order in a Binary Tree.md",
+    "Algorithms/depth-first search (DFS) - Traversal Order in a Binary Tree.md",
+    "Algorithms/Deno",
+    "Data Structures/Parsing.md",
+    "Images (do not delete)/Pasted image 20250913230140.png",
+    "Images (do not delete)/Pasted image 20250914012232.png",
+    "Data Structures/Matrix.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Untitled.base",
+    "PDF/NASA Software Engineering Handbook.pdf",
+    "Images (do not delete)/Pasted image 20250913142746.png",
+    "PDF",
+    "Images (do not delete)/Pasted image 20250913193655.png",
+    "Memes/xkcd.com 1838.md",
+    "Memes",
+    "Excalidraw/Drawing 2025-09-13 14.26.44.excalidraw.md",
+    "Images (do not delete)/Pasted image 20250912161618.png",
+    "Data Structures/Binary Search Tree.md",
+    "Images (do not delete)/Pasted image 20250913141114.png",
+    "Pasted image 20250913141657.png",
+    "Other/Tripartite.md",
+    "Data Structures/Binary Tree.md",
+    "Data Structures/Tree Node.md",
+    "Data Structures/Linear Node.md",
+    "Courses/AWS ML Engineer Associate/1.3 Validate Data and Prepare for Modeling/Lesson 8 of 12  - Dataset Splitting, Shuffling, and Augmentation.md",
+    "Excalidraw/Drawing 2025-09-12 20.46.53.excalidraw.md",
+    "Courses/AWS ML Engineer Associate/1.3 Validate Data and Prepare for Modeling",
+    "Courses/AWS ML Engineer Associate",
+    "Courses",
+    "Images (do not delete)/Pasted image 20250912154253.png",
+    "Images (do not delete)/Pasted image 20250912154135.png",
+    "Images (do not delete)/Pasted image 20250912153929.png",
+    "Algorithms",
+    "Images (do not delete)"
+  ]
+}

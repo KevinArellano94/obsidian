@@ -1,0 +1,2 @@
+gpg
+password-store
