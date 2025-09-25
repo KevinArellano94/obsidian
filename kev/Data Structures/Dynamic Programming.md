@@ -3,6 +3,9 @@ tags:
   - dynamicprogramming
 time complexity: O(1)
 ---
+## Where is DP used for?
+"The Human Genome Project has made great progress toward the goals of identifying all the roughly 30,000 genes in human DNA, determining the sequences of the roughly 3 billion chemical base pairs that make up human DNA, storing this information in databases, and developing tools for data analysis. Each of these steps requires sophisticated algorithms. Although the solutions to the various problems involved are beyond the scope of this book, many methods to solve these biological problems use ideas presented here, enabling scientists to accomplish tasks while using resources efficiently. Dynamic programming, as in Chapter 14, is an important technique for solving several of these biological problems, particularly ones that involve determining similarity between DNA sequences. The savings realized are in time, both human and machine, and in money, as more information can be extracted by laboratory techniques." - [[Introduction to Algorithms by Cormen, Leiserson, Rivest, and Stein.pdf]] (chapter 1)
+
 ## What is Dynamic Programming?
 
 Dynamic programming is an **optimization technique** used to **efficiently solve problems that are computationally complex**. The key characteristic is the way dynamic programming **breaks the overall problem into smaller**, **overlapping subproblems**. Often the solutions to subproblems are stored and reused to avoid repeated work. In comparison with other approaches, this **greatly improves the efficiency of the solution**.
